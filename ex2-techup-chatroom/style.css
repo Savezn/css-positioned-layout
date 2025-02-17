@@ -4,7 +4,7 @@
 }
 main {
 	width: 100vw;
-	outline: 2px solid red;
+	/* outline: 2px solid red; */
 }
 p {
 	max-width: 300px;
