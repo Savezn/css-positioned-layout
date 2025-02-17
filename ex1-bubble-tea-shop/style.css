@@ -3,3 +3,69 @@ body {
 }
 
 /* Start coding here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.card {
+  background: white;
+  padding: 10px;
+  text-align: center;
+  max-width: 634px;
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 4px; /* Start gradient from the bottom */
+  left: 0;
+  width: 100%;
+  height: 50%; /* Half the image */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* Black to transparent */
+  z-index: 2;
+  border-radius: 5px;
+}
+
+.label {
+  position: absolute;
+  font-size: 26px;
+  font-weight: 400;
+  color: white;
+  left: 508px;
+  top: 25px;
+  z-index: 3;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  padding: 5px 25px;
+}
+
+.card-text {
+  font-size: 24px;
+  position: absolute;
+  padding: 0px;
+  text-align: left;
+  color: white;
+  top: 280px;
+  left: 15px;
+  z-index: 3;
+}
