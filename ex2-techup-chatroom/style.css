@@ -1,1 +1,69 @@
-/* Start coding here */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+header {
+    color: white;
+    background-color: grey;
+    padding: 10px;
+}
+
+.chat-messages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    margin: 30px 20px 0 20px;
+}
+
+.user-messages, .highlight-messages, .other-messages {
+    min-width: 200px;
+    height: auto;
+    padding: 10px 15px 10px 15px;
+    border-radius: 30px;
+}
+
+.user-messages {
+    background-color: rgb(82, 193, 82);
+}
+    
+.other-messages {
+    align-self: flex-start;
+    background-color: grey;
+}
+
+.highlight-messages {
+    position: relative;
+        background-color: lightgray;
+    }    
+    
+    .x-sign {
+        position: absolute;
+        top: 0;
+        right: -5px;
+        color: white;
+        background-color: darkgray;
+        padding: 0 5px 2px 5px;
+            border-radius: 1000px;
+        }
+    
+#bubble-messages {
+    position: relative;
+}
+
+    #bubble-messages::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        right: -4px; /* ปรับตำแหน่งตามต้องการ */
+        top: -10px;
+        width: 20px;
+        height: 20px;
+        background-color: rgb(255, 255, 255); /* ใช้สีเดียวกับสีพื้นหลังของบับเบิล */
+        border-radius: 50%; /* ทำให้กลายเป็นวงกลม */
+        transform: rotate(40deg);
+        box-shadow: 6px 4px 0 0 rgb(82, 193, 82);
+    }
