@@ -1,5 +1,28 @@
 body {
-  font-family: "Kanit";
+	font-family: "Kanit";
+}
+.section-market {
+	position: relative;
+	/* outline: 3px solid red; */
 }
 
-/* Start coding here */
+.img-market {
+	border-radius: 10px;
+}
+
+.market {
+	margin: 5px;
+	color: white;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+.name-market {
+	padding: 10px;
+	background: hsl(0, 0%, 20%, 0.6);
+	width: auto;
+	color: white;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
