@@ -1,1 +1,107 @@
 /* Start coding here */
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  
+  /* Header */
+  header {
+    background-color: gray;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Chat container */
+  .chat-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 60px; /* Adjusted for header */
+  }
+  
+  .chat-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* Messages styling */
+  .messages-left,
+  .messages-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .messages-left {
+    align-items: flex-start;
+    position: relative;
+    top: 200px;
+  }
+  
+  .messages-right {
+    align-items: flex-end;
+  }
+  
+  /* Common message box styling */
+  .message-box {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: black;
+    border-radius: 25px;
+    max-width: 300px;
+    width: 200px;
+    position: relative;
+    top: 100px;
+  }
+  
+  /* Message colors */
+  .green-tail,
+  .green-no-tail {
+    background-color: lightgreen;
+  }
+  
+  .dark-grey {
+    background-color: darkgrey;
+  }
+  
+  .grey-with-x {
+    background-color: lightgray;
+    position: relative;
+  }
+  
+  /* Green tail effect */
+  .green-tail::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 10px;
+    border: 10px solid transparent;
+    border-left-color: lightgreen;
+  }
+  
+  /* Grey message with 'X' mark */
+  .grey-with-x::before {
+    content: '×';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 14px;
+    color: white;
+    background-color: darkgrey;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 
